@@ -31,3 +31,5 @@ function fizzbuzz(n) {
   }
   return arr;
 }
+
+// or

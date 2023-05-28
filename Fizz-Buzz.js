@@ -15,3 +15,19 @@ Example:
 
 
 // Solution
+
+function fizzbuzz(n) {
+  let i = 1, arr = [];
+  while (i <= n) {
+    let fizz = (i % 3 == 0);
+    let buzz = (i % 5 == 0);
+    if (fizz || buzz) {
+      arr.push((fizz?"Fizz":"") + (buzz?"Buzz":""));
+    }
+    else {
+      arr.push(i);
+    }
+    i++;
+  }
+  return arr;
+}
